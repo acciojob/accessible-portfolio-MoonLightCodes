@@ -1,16 +1,50 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accessible Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+  <!-- Heading with ARIA role -->
+  <h1 role="heading">John Doe Portfolio</h1>
 
+  <!-- Navigation Bar with ARIA role -->
+  <nav role="navigation">
+    <ul role="list">
+      <li role="listitem"><a href="#about">About</a></li>
+      <li role="listitem"><a href="#skills">Skills</a></li>
+      <li role="listitem"><a href="#projects">Projects</a></li>
+    </ul>
+  </nav>
+
+  <!-- Image with ARIA role -->
+  <img src="https://via.placeholder.com/200" alt="John Doe's Portrait" role="img">
+
+  <!-- Brief Description -->
+  <section id="about">
+    <p>Hello! I am John Doe, a passionate web developer specializing in creating accessible websites.</p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul role="list">
+      <li role="listitem">HTML</li>
+      <li role="listitem">CSS</li>
+      <li role="listitem">JavaScript</li>
+    </ul>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul role="list">
+      <li role="listitem">Portfolio Website</li>
+      <li role="listitem">Weather App</li>
+      <li role="listitem">E-commerce Platform</li>
+    </ul>
+  </section>
 </body>
-
 </html>
